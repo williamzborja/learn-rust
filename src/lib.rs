@@ -1,2 +1,5 @@
-mod control_flow;
-mod variables;
+mod _lang;
+mod deps;
+#[allow(dead_code)]
+mod exercises;
+mod std_lib;
