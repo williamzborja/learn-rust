@@ -4,4 +4,3 @@ pub mod list;
 pub mod structs;
 pub mod text;
 pub mod tuples;
-pub mod vectors;
