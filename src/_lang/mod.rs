@@ -1,4 +1,4 @@
 mod control_flow;
-mod errors;
+mod error_control;
 mod ownership;
 mod variables;
