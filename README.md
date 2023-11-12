@@ -14,8 +14,6 @@ cargo is a really powerful system that allow you create rust binary or libraries
 ```bash 
 cargo build
 ```
-
-
 ## Modules
 
 - Variables and types

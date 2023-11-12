@@ -2,11 +2,8 @@
 mod test {
     #[test]
     fn create() {
-        let mut nums = Vec::new();
+        let nums = vec![1, 2];
 
-        nums.push(1);
-        nums.push(2);
-    
         println!("numbers: {:#?} with len {}", nums, nums.len());
     }
 
@@ -23,13 +20,13 @@ mod test {
 
         println!("numbers: {:#?}", nums);
         println!("first: {:?}", nums[0]);
-        println!("first: {:?}", nums.get(0));
+        println!("first: {:?}", nums.first());
         println!("second: {:?}", nums.get(1));
     }
 
     #[test]
     fn iterate() {
-        let nums = vec![1, 2];
+        let nums = [1, 2];
 
         for (i, num) in nums.iter().enumerate() {
             println!("index {} num: {}", i, num);
@@ -46,7 +43,7 @@ mod test {
     }
 
     #[test]
-    fn insert(){
+    fn insert() {
         let mut nums = vec![1, 2];
 
         println!("numbers: {:?}", nums);
@@ -55,7 +52,7 @@ mod test {
     }
 
     #[test]
-    fn slice_to_vec(){
+    fn slice_to_vec() {
         let nums = vec![1, 2, 3, 4, 5];
 
         let slice = &nums[1..3];
@@ -63,8 +60,6 @@ mod test {
         println!("numbers: {:?}", nums);
         println!("slice: {:?}", slice);
 
-
         println!("vector: {:?}", slice.to_vec());
-
     }
 }

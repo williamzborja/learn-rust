@@ -41,9 +41,9 @@ fn car_factory(color: String, motor: Transmission, roof: bool, miles: u32) -> Ca
     // - Bind first three fields to values of input arguments
     // - "age" field calls "car_quality" function with "miles" input argument
     Car {
-        color: color,
-        motor: motor,
-        roof: roof,
+        color,
+        motor,
+        roof,
         age: car_quality(miles), // todo!("Replace `mileage: miles` with `age` tuple field, call `car_quality()` with `miles` as input argument");
     }
 }

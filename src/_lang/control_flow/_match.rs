@@ -19,7 +19,7 @@ mod test {
         }
 
         match x {
-            1 | 2 | 3 => println!("x is 1 or 2 or 3"),
+            1..=3 => println!("x is 1 or 2 or 3"),
             _ => println!("x is something else"),
         }
     }
