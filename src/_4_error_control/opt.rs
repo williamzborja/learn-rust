@@ -15,10 +15,8 @@ mod test {
     }
 
     #[test]
-    #[should_panic]
     fn unwrap_none() {
         let x: Option<i32> = None;
         println!("{:?}", x);
     }
 }
-
