@@ -1,4 +1,5 @@
 mod collections;
+mod maths;
 
 // Declare Car struct to describe vehicle with four named fields
 #[derive(PartialEq, Debug)]
