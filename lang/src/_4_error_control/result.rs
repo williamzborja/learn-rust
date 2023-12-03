@@ -59,7 +59,7 @@ mod tests {
     }
 
     #[test]
-    fn closure() {
+    fn () {
         let greeting_file_result = File::open("hello.txt");
 
         greeting_file_result.unwrap_or_else(|error| {

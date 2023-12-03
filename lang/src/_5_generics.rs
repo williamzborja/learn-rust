@@ -67,11 +67,15 @@ mod tests {
         let largest = largest_char(list_char);
         assert_eq!(&'f', largest);
 
+        let list_string = &vec!["ae", "cd"];
+
         let largest_int = largest_generic(list_int);
         let largest_char = largest_generic(list_char);
+        let largest_str = largest_generic(list_string);
 
         assert_eq!(&45, largest_int);
         assert_eq!(&'f', largest_char);
+        assert_eq!(&"cd", largest_str);
     }
 
     #[test]
